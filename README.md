@@ -1,1 +1,1 @@
-# bits-training
+# Assignments
