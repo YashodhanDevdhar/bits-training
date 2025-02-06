@@ -20,7 +20,7 @@ const products1 = products.map((product) => {
   };
 });
 
-console.log(`Product titles in uppercase : ${products1}`);
+console.log("Products with names in uppercase",products1);
 
 // Task 2:
 const electronicProducts = products.filter(
