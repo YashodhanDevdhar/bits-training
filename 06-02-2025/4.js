@@ -11,44 +11,40 @@ const products = [
   { name: "Office Chair", price: 150, category: "Furniture" },
 ];
 
-// Task 1: 
-const products1 = products.map(product => {
-    return {
-        name: product.name.toUpperCase(),
-        price: product.price,
-        category: product.category
-    };
+// Task 1:
+const products1 = products.map((product) => {
+  return {
+    name: product.name.toUpperCase(),
+    price: product.price,
+    category: product.category,
+  };
 });
 
-console.log(products1);
+console.log(`Product titles in uppercase : ${products1}`);
 
-// Task 2: 
-const electronicProducts = products.filter(product => {
-    if(product.category === "Electronics")
-        return product;
-})
+// Task 2:
+const electronicProducts = products.filter(
+  (product) => product.category === "Electronics"
+);
 
-console.log(electronicProducts);
+console.log("Electoronic products are : ", electronicProducts);
 
-// Task 3: 
-const totalPrice = products.reduce((total,current,i,products)=>{
-    return total += current.price;
-},0)
+// Task 3:
+const totalPrice = products.reduce(
+  (total, current, i, products) => (total += current.price),
+  0
+);
 
-console.log(totalPrice);
+console.log(`total price : ${totalPrice}`);
 
-// Task 4: 
-function totalPriceOfElectronicProducts(){
-    const electronicProducts = products.filter(product => {
-        if(product.category === "Electronics")
-            return product;
-    })
+// Task 4:
+function totalPriceOfCategory(category) {
+  return products
+    .filter((product) => product.category === category)
+    .map((product) => product.price)
+    .reduce((sum, current) => sum + current, 0);
+}
 
-    const totalPrice = electronicProducts.reduce((total,current,i,products)=>{
-        return total += current.price;
-    },0)
-
-    return totalPrice
-};
-
-console.log(totalPriceOfElectronicProducts());
+console.log(
+  `Total price of electronics is : ${totalPriceOfCategory("Electronics")}`
+);
