@@ -30,25 +30,27 @@ bookLibrary = {
     this.books.push(book);
   },
   getBooksByAuthor: function (author) {
-    return this.books.filter(book => book.author === author);
+    return this.books.filter((book) => book.author === author);
   },
   removeBook: function (title) {
-    this.books = this.books.filter(book => book.title !== title);
+    this.books = this.books.filter((book) => book.title !== title);
   },
   getAllBooks: function () {
     return this.books;
   },
 };
 
-
 bookLibrary.addBook({
-    title:"The India Way",
-    author:"Dr. S. Jaishankar",
-    yearPublished:2020
+  title: "The India Way",
+  author: "Dr. S. Jaishankar",
+  yearPublished: 2020,
 });
 
-console.log(bookLibrary.getBooksByAuthor("Dr. S. Jaishankar"));
+console.log(
+  "Getting a book written by Dr. S. Jaishankar",
+  bookLibrary.getBooksByAuthor("Dr. S. Jaishankar")
+);
 
 bookLibrary.removeBook("The Tragedy of Great Power Politics");
 
-console.log(bookLibrary.getAllBooks());
+console.log("Getting all the books from library", bookLibrary.getAllBooks());

@@ -23,7 +23,7 @@ function maxNum(numArr) {
 
 const numArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-console.log(`Array with odd numbers : ${processData(numArr, filterOdd)}`);
-console.log(`Array with doubled numbers : ${processData(numArr, doubleNumbers)}`);
+console.log(`Array with odd numbers : [${processData(numArr, filterOdd)}]`);
+console.log(`Array with doubled numbers : [${processData(numArr, doubleNumbers)}]`);
 console.log(`Sum of array numbers : ${processData(numArr, calculateSum)}`);
 console.log(`Max among the array numbers : ${processData(numArr, maxNum)}`);
