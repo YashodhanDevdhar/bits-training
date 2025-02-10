@@ -19,3 +19,6 @@
   - **4.3** : Analyzing JS Heap Memory - [View](06-02-2025/3_MemoryLeak)
   - **4.4** : Working with map(), filter() & reduce() methods - [View](06-02-2025/4.js)
   - **4.5** : Callback functions with map(), filter() & reduce() methods - [View](06-02-2025/5.js)
+
+- **Assignment 5** [folder](07-02-2025)
+  - Demo e-commerce website using Fake Store API - [View](07-02-2025)
