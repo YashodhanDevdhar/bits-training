@@ -71,3 +71,17 @@ console.log("Total Salary : ",totalSalaryE1);
 
 console.log("\nIntern : ",i1);
 console.log("Total Salary : ",totalSalaryI1);
+
+/*
+OUTPUT : 
+
+Manager :  Manager { name: 'Yashodhan', id: 123, salary: 60000 }
+Total Salary :  72000
+
+Engineer :  Engineer { name: 'Prasad', id: 456, salary: 45000 }
+Total Salary :  49500
+
+Intern :  Intern { name: 'Devdhar', id: 789, salary: 25000 }
+Total Salary :  25000
+
+*/
