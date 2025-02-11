@@ -22,3 +22,6 @@
 
 - **Assignment 5** [folder](07-02-2025)
   - Demo e-commerce website using Fake Store API - [View](07-02-2025)
+
+- **Assignment 6** [folder](11-02-2025)
+  - **TypeScript OOPS** -[View](11-02-2025)
