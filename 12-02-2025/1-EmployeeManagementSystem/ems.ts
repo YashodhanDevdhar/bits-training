@@ -2,7 +2,7 @@ interface Employee {
     id:number;
     name:string;
     position:string;
-    salary_:number;
+    salaryy:number;
 }
 
 interface Manager extends Employee{
@@ -27,7 +27,7 @@ class Department {
     getTotalSalary() : number {
         let totalSalary:number = 0;
         for (const element of this.employees) {
-            totalSalary += element.salary_;
+            totalSalary += element.salaryy;
         }
         return totalSalary;
     };
@@ -41,8 +41,8 @@ class Department {
 
 function updateSalary<T extends Employee>(employee:T, newSalary:number) : T {
     dept1.removeEmployee(employee.id);
-    dept1.addEmployee({...employee, salary_:newSalary})
-    return {...employee, salary_:newSalary};
+    dept1.addEmployee({...employee, salaryy:newSalary})
+    return {...employee, salaryy:newSalary};
 };
 
 
@@ -50,21 +50,21 @@ const emp1 : Employee = {
     id:1,
     name:"Amar",
     position:"Trainee",
-    salary_:25000
+    salaryy:25000
 };
 
 const emp2 : Employee = {
     id:2,
     name:"Akbar",
     position:"Engineer",
-    salary_:40000
+    salaryy:40000
 };
 
 const emp3 : Employee ={
     id : 3,
     name:"Anthony",
     position : "Engineer",
-    salary_:40000
+    salaryy:40000
 }
 
 const dept1 = new Department([emp1,emp2,emp3]);
@@ -77,7 +77,7 @@ dept1.addEmployee({
     id:4,
     name:"Bulbul",
     position:"Trainee",
-    salary_:25000
+    salaryy:25000
 });
 
 console.log("\nnew emp4 added")
