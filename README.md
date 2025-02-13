@@ -25,3 +25,7 @@
 
 - **Assignment 6** [folder](11-02-2025)
   - **TypeScript OOPS** -[View](11-02-2025)
+
+- **Assignment 7** [folder](12-02-2025)
+  - **Employee Management System** -[View](12-02-2025/1-EmployeeManagementSystem)
+  - **Quiz App** -[View](12-02-2025/2-QuizApp)
