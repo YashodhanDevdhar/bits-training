@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/14-02-2025/e-com-store/index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            
+            <span class="fs-4">Yashodhan's Demo Store</span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/14-02-2025/e-com-store/index.html" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="/14-02-2025/e-com-store/cart.html" class="nav-link">Cart</a></li>
+          </ul>
+        </header>
+    </div>
+
+    <div class="container mt-5">
+        <div class="card shadow-sm border rounded-3 p-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <img id="product-image" class="img-fluid w-100" style="max-height: 400px; object-fit: contain;" alt="Product Image">
+                </div>
+                <div class="col-md-6 card-body border-start">
+                    <h2 id="product-title"></h2>
+                    <p id="product-description"></p>
+                    <p><strong>Price:</strong> $<span id="product-price"></span></p>
+                    <button class="btn btn-success add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container fixed-bottom">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-body-secondary">© 2025 YashodhanDevdhar, Inc</p>
+        
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+              
+          </a>
+        
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="/14-02-2025/e-com-store/index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="/14-02-2025/e-com-store/cart.html" class="nav-link px-2 text-body-secondary">Cart</a></li>
+          </ul>
+        </footer>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="/14-02-2025/e-com-store/cart.js"></script>
+    <script src="/14-02-2025/e-com-store/product.js"></script>
+</body>
+</html>
