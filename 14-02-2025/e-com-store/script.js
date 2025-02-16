@@ -31,7 +31,7 @@ const linkAddToCartBtn = () => {
             const target = event.target;
             const productId = target.getAttribute("data-id");
             if (productId) {
-                console.log(productId);
+                addToCart(Number(productId));
             }
         });
     });

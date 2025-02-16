@@ -13,7 +13,7 @@ interface Product {
 }
 
 const params =new URLSearchParams(window.location.search);
-let productId = params.get("id");
+let productId :number = Number(params.get("id"));
 
 const addInfoProductCard = (product : Product) => {
     productImage.src = product.image;
@@ -24,7 +24,7 @@ const addInfoProductCard = (product : Product) => {
 
 const addToCartBtnClick = ():void => {
     addToCartBtn.addEventListener("click",()=>{
-        console.log(productId);
+        addToCart(productId);
     });
 };
 

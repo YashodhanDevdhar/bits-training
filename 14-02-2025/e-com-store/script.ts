@@ -34,7 +34,7 @@ const linkAddToCartBtn = () : void => {
             const target = event.target as HTMLButtonElement;
             const productId = target.getAttribute("data-id");
             if(productId){
-                console.log(productId);
+                addToCart(Number(productId));
             }
         });
     });

@@ -14,16 +14,16 @@ const productDescription = document.getElementById("product-description");
 const productPrice = document.getElementById("product-price");
 const addToCartBtn = document.querySelector(".add-to-cart");
 const params = new URLSearchParams(window.location.search);
-let productId = params.get("id");
+let productId = Number(params.get("id"));
 const addInfoProductCard = (product) => {
     productImage.src = product.image;
     productTitle.innerHTML = product.title;
     productDescription.innerHTML = product.description;
-    productPrice.innerHTML = `$${product.price}`;
+    productPrice.innerHTML = `${product.price}`;
 };
 const addToCartBtnClick = () => {
     addToCartBtn.addEventListener("click", () => {
-        console.log(productId);
+        addToCart(productId);
     });
 };
 const fetchData = () => __awaiter(void 0, void 0, void 0, function* () {
